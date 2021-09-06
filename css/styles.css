@@ -715,3 +715,50 @@ pointer-events: none;
 .backdrop.is-hidden .modal{
   transform: translate(-50% -50%) scale(0.9);
 }
+
+
+
+
+
+.btn{
+  display: -webkit-inline-flex;
+  margin: 0;
+  padding:10px 30px;
+  border-radius: 3px;
+  background-color: lawngreen;
+  color: tomato;
+  font: inherit;
+  cursor: pointer;
+  transition: background-color 1000ms linear;
+}
+
+.btn::before{
+  position: relative;
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+background-color: red;
+margin-right: 5px;
+transition: transform 500ms linear;
+
+
+}
+.btn:hover::before{
+  transform: translateY(-35px);
+}
+.btn::after{
+ position: absolute;
+ top:50%;
+ left: 20px;
+ content:"";
+ 
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: blue; 
+}
+.btn:hover,
+.btn:focus{
+  background-color: lightcoral;
+}
