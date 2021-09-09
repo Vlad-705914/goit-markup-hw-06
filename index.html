@@ -556,8 +556,30 @@
         </div>
        </footer>
        <div class="backdrop is-hidden"data-modal >
+       
         <div class="modal">
+          <p class="form-text">Оставьте свои данные, мы вам перезвоним</p>
+          <form action="" class="form-team">
+            <label for="" class="label-tel">
+               Имя
+              <input type="text" name="name" class="input-team" required>
+            </label>
+           <label for="" class="label-tel">
+            Телефон
+            <input type="tel" name="tel" class="input-team" required placeholder="76">
+          </label>
           
+          <label for="" class="label-tel">
+            Адрес
+            <input type="email" name="email" class="input-team" required>
+          </label>
+          <!-- <label for="" ></label> -->
+          <label for="comment" class="label-tel">Комментарий</label>
+          <textarea name="comment" class="form-comment" id="" >Введите текст</textarea>
+          
+           <button type="submit" class="form-button" method"GET">Отправить
+           </button>
+          </form>
           <button class="button-open" type="button"  data-modal-close>
             <svg class="modal-icon">
               <use href="./images/sprite.svg#icon-Vector-close"></use>
