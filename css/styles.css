@@ -972,5 +972,55 @@ color: var(--secondary-color);
 .label-item{
 color: var(--accent-color);
 margin: 5px;
-  
 }
+
+
+
+.forms{
+  padding: 20px;
+  margin: 20px;
+  width: 500px;
+  outline: 1px solid green;
+}
+
+.forms-fields{
+position: relative;
+  margin-bottom: 20px;
+}
+.forms-label{
+position: absolute;
+top: 50%;
+left: 30px;
+background-color: yellow;
+transform: translateY(-50%);
+transition: transform 500ms linear;
+}
+
+.forms-input{
+ width: 100%;
+  margin: 0;
+  padding: 10px 20px;
+  font: inherit;
+  border-radius:3px;
+  border: 1px solid tomato;
+}
+
+.forms-input:focus + .forms-label,
+.forms-input:not(:placeholder-shown) + .forms-label{
+  transform: translateY(-50px);
+}
+
+.forms-input:placeholder-shown{
+                               
+  background-color: greenyellow;
+}
+
+.icon{
+  position: absolute;
+  left: 0;
+  top: 0;
+  display:inline-block;
+}
+/* .forms-icons{
+  fill: ivory;
+} */
