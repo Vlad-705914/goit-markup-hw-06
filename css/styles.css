@@ -975,7 +975,7 @@ margin: 5px;
 }
 
 
-/* 
+
 .forms{
   padding: 20px;
   margin: 20px;
@@ -1020,4 +1020,14 @@ transition: transform 500ms linear;
   left: 0;
   top: 0;
   display:inline-block;
+  background-color: #2196F3;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+}
+/* .forms-input:focus~ .icon{
+background-color: brown;
 } */
+.forms-input:focus~ .forms-icons{
+  fill: aqua;
+}
