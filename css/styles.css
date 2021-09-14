@@ -984,7 +984,8 @@ margin: 5px;
 }
 
 .forms-fields{
-position: relative;
+display: block;
+  position: relative;
   margin-bottom: 20px;
 }
 .forms-label{
@@ -1028,6 +1029,7 @@ transition: transform 500ms linear;
 /* .forms-input:focus~ .icon{
 background-color: brown;
 } */
-.forms-input:focus~ .forms-icons{
-  fill: aqua;
+
+.forms-fields:focus-within> .icon{
+  background-color: darkblue;
 }
