@@ -610,36 +610,61 @@
 
 
 
-      <form action="#" class="forms">
-<div class="forms-fields">
- 
-  <input type="text" class="forms-input" name="name" id="name"
-   placeholder=" " >
-  <label for="name" class="forms-label">Имя</label>
-  <span class="icon">
-<svg class="forms-icons" width="16" height="15">
-  <use href="./images/sprite.svg#icon-icon-cneck"></use>
-</svg>
-  </span>
-</div>
+      <form class="forms">
 
-  <!-- <div class="forms-fields">
+     <ul class="forms-fields">
+        <li>
+          <label  class="label">
+            <input  class="checkbox" type="checkbox" name="topic" value="HTML">
+            <span class="icon"></span>
+            HTML
+            <!-- <span class="checkbox-icons">
+            <svg class="forms-icons" width="16" height="15">
+              <use href="./images/sprite.svg#icon-icon-check-4"></use>
+            </svg>
+          </span> -->
+          </label>
+        </li>
+      
+        
+        <li>
+          <li>
+            <label  class="label">
+              <input  class="checkbox" type="checkbox" name="topic" value="HTML">
+              <span class="icon"></span>
+             HTML
+             
+            </label>
+        </li>
+      </ul>
+      <button type="submit">help</button>
+   </form>
+
+<label class="check option">
+  <input class="check_input" type="checkbox" >
+ <span class="check_box"></span>
+  Первый
+</label>
    
-    <label for="mail" class="forms-label">
-      <input type="email" class="forms-input" name="mail" id="mail" 
-      placeholder=" " >
-      <svg class="forms-icons" width="16" height="15">
-        <use href="./images/sprite.svg#icon-icon-cneck"></use>
-      </svg>
-      <span class="icon">Почта</span>
-      
-    </label>
- 
-    </div> -->
-</form>
+<label class="check option">
+  <input class="check_input" type="checkbox" checked>
+  <span class="check_box"></span> 
+  Второй
+</label>
+
+<label class="check option">
+  <input class="check_input" type="checkbox" disabled>
+  <span class="check_box"></span>
+  Третий
+</label>
+
+<label class="check option">
+  <input class="check_input" type="checkbox" checked disabled>
+  <span class="check_box"></span> 
+  Четвертый
+</label>
   
-     
-      
+
       
     <script src="./js/modal.js"></script>    
 </body>
