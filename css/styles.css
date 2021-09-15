@@ -305,8 +305,9 @@ margin-right:30px;
         display: flex;
         align-items:baseline;
       }
-     .logo-studio{
-       flex-grow: 1;
+     
+     .footer-logo-studio{
+      flex-grow: 1;
      }
      
       .footer-logo{
@@ -398,7 +399,7 @@ margin-right:30px;
     
     /* FOOTER-FORM */
      .footer-form{
-      margin-bottom: 20px;
+      /* margin-bottom: 20px; */
       margin-left: 93px;
      }  
     
@@ -785,7 +786,7 @@ transition:opacity 250ms,visibility 250ms;
 .modal-icon{
   width: 18px;
   height: 18px;
-  margin-left: 17px;
+ 
   fill: #000000;
   cursor: pointer;
   transition: fill 250ms var(--timing-function);
@@ -808,8 +809,18 @@ pointer-events: none;
 }
  .modal-form-field{
  margin-bottom: 12px;
+ /* margin-top: 20px; */
 
-} 
+}
+
+.modal-check-field{
+  margin-bottom: 30px;
+}
+.modal-comments-field{
+ margin-bottom: 20px;
+
+}
+
 .modal-form-input{
  height: 40px;
   width:100%;
@@ -918,7 +929,7 @@ text-align: left;
 display: block;
 width: 100%;
  height: 120px; 
-padding-left: 16px;
+padding:12px 16px;
  border-radius:4px;
  border: 1px solid rgba(33,33,33,0.2);
  resize: none;
@@ -945,6 +956,7 @@ line-height: 1.7;
 letter-spacing: 0.03em;
 text-align: left;
 color: var(--secondary-color);
+padding-top: 20px;
 
 }
 
@@ -955,28 +967,35 @@ color: var(--secondary-color);
   height: 15px;
   margin-right: 7px;
   border-radius: 2px;
- border:1px solid  var(--secondary-color); 
-
-  }
+ border:2px solid  var(--secondary-color); 
+ color: var(--title-text-color);
+ background-repeat:no-repeat;
+ background-size:contain;
+ background-position:center;
+ /* border: none; */
+ transition: background 250ms var(--timing-function);
+}
 
 .checkbox:checked + .check-label::before{
   background: var(--accent-color);
   background-image: url("../images/check.svg");
-  background-repeat:no-repeat;
-  background-size:contain;
-  background-position:center;
-  border: none;
-  transition: background 250ms var(--timing-function);
-
+ 
 }
 .label-item{
 color: var(--accent-color);
-margin: 5px;
+
+
 }
 
+.flex-wrap
+.filter-item:not(:last-child)
+.filter-item:not(:last-child)
+.flex-wrap
 
 
-.forms{
+
+
+/* .forms{
   padding: 20px;
   margin: 20px;
   width: 500px;
@@ -1039,4 +1058,6 @@ padding-left: 1.2em;
 }
 .check_input:checked + .check_box{
 background-image:url(../images/icon-check/on.svg);
-}
+} */
+
+
