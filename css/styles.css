@@ -55,9 +55,7 @@ margin-top: 0;
     padding-bottom: 94px;
    
 } 
-.header{
- border-bottom: 1px solid #ECECEC;
-}  
+
 
 .container{ 
  width: 1200px;
@@ -68,6 +66,10 @@ margin-right: auto;
  
 }
 
+
+.header{
+  border-bottom: 1px solid #ECECEC;
+ }
 
 
  .header-logo{
